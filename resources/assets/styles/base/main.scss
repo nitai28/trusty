@@ -1,0 +1,33 @@
+@import "../component/header/header";
+@import "../component/header/nav/nav";
+@import "../component/footer/footer";
+@import "../component/main/main";
+
+body {
+  background-color: white;
+  direction: rtl;
+  font-family: "Fb Spoiler";
+  font-weight: normal;
+}
+.page-container{
+  max-width: 1100px;
+  margin: 0 auto;
+}
+ul,h3,p{
+  margin :0;
+}
+li{
+  list-style: none;
+}
+
+
+//fonts
+@font-face {
+  font-family: "Fb Spoiler";
+  src: url("/src/fonts/fbspoilersp-regularwebfont.woff2"),
+  url("/src/fonts/fbspoileren-bold-webfont.woff2");
+}
+
+
+  
+

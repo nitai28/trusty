@@ -1,0 +1,29 @@
+header {
+  background-color: #00c6d8;
+  width: 1920px;
+  height: 359px; }
+
+.head-line {
+  font-size: 55px;
+  line-height: 18px;
+  color: #fff;
+  font-family: "Fb Spoiler";
+  font-weight: bold;
+  color: #33455d; }
+
+.header-p {
+  font-family: "Fb Spoiler";
+  width: 701px;
+  height: 124px;
+  font-size: 26px;
+  line-height: 31px;
+  font-weight: bold;
+  text-align: center;
+  color: #33455d; }
+
+body {
+  background-color: white;
+  margin: 10px;
+  padding: 10px; }
+
+/*# sourceMappingURL=main.css.map */

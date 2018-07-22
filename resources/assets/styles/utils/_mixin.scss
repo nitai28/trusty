@@ -1,0 +1,29 @@
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin content-position {
+  top: 13px;
+  right: 409px;
+  left: 410px;
+}
+
+@mixin my-pic-main-nav-def($h,$w,$pl) {
+  height: $h;
+  width: $w;
+  padding-left: $pl;
+}
+
+%clean-select{
+  appearance: none;
+  background: none;
+  border: none;
+}
+
+%flex-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
