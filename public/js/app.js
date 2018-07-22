@@ -67,21 +67,9 @@
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(1);
-module.exports = __webpack_require__(2);
+(function webpackMissingModule() { throw new Error("Cannot find module \"/home/compie/Desktop/trusty/trusty/resources/assets/js/app.js\""); }());
+(function webpackMissingModule() { throw new Error("Cannot find module \"/home/compie/Desktop/trusty/trusty/resources/assets/styles/app-rtl.scss\""); }());
 
-
-/***/ }),
-/* 1 */
-/***/ (function(module, exports) {
-
-throw new Error("Module build failed: TypeError: this.setDynamic is not a function\n    at PluginPass.pre (/home/compie/Desktop/trusty/trusty/node_modules/babel-plugin-transform-runtime/lib/index.js:31:12)\n    at transformFile (/home/compie/Desktop/trusty/trusty/node_modules/@babel/core/lib/transformation/index.js:78:27)\n    at runSync (/home/compie/Desktop/trusty/trusty/node_modules/@babel/core/lib/transformation/index.js:45:3)\n    at runAsync (/home/compie/Desktop/trusty/trusty/node_modules/@babel/core/lib/transformation/index.js:35:14)\n    at process.nextTick (/home/compie/Desktop/trusty/trusty/node_modules/@babel/core/lib/transform.js:34:34)\n    at process._tickCallback (internal/process/next_tick.js:61:11)");
-
-/***/ }),
-/* 2 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
 
 /***/ })
 /******/ ]);

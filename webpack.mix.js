@@ -13,4 +13,3 @@ let mix = require('laravel-mix');
 
 mix.js('resources/assets/js/app.js', 'public/js')
     .sass('resources/assets/styles/app-rtl.scss', 'public/css');
-// mix.sass('resources/assets/styles/zzz.scss', 'public/css');

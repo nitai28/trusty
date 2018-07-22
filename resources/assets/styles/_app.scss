@@ -28,7 +28,7 @@
   .title {
     font-size: 84px;
     font-weight: 100;
-    @include margin(0, 0, 0, 20px)
+    @include margin(0, 0, 0, 20px);
   }
   .responsive-image {
     width: auto;
