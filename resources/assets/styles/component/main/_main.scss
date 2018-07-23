@@ -138,6 +138,10 @@ main {
     &:last-child {
       margin-right: 4px;
     }
+    &:checked{
+      background-color: lightblue;
+      outline: none;
+    }
 
   }
 

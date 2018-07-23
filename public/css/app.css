@@ -1972,6 +1972,11 @@ main .main-cont {
   margin-right: 4px;
 }
 
+.price-wizard input[type='radio']:checked {
+  background-color: lightblue;
+  outline: none;
+}
+
 .price-wizard .radio1::after {
   position: absolute;
   display: block;
