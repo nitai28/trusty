@@ -9,7 +9,7 @@ main {
   .main-cont {
     position: relative;
     display: flex;
-  flex-direction: column;
+    flex-direction: column;
     //justify-content: space-between;
   }
 }
@@ -115,6 +115,19 @@ main {
   flex-direction: column;
   padding-right: 15px;
   width: 268px;
+  button {
+    border-radius: 25px;
+    background-color: #00c7d9;
+    border: none;
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+    display: block;
+    width: 100%;
+    font-size: 18px;
+    margin-bottom: 100px;
+
+  }
   .last-select-border {
     margin-top: 15px;
   }
@@ -138,7 +151,7 @@ main {
     &:last-child {
       margin-right: 4px;
     }
-    &:checked{
+    &:checked {
       background-color: lightblue;
       outline: none;
     }
@@ -182,7 +195,7 @@ main {
 
   }
   .last-border {
-    margin-bottom: 133px;
+    margin-bottom: 19px;
   }
 
   h3 {
@@ -271,12 +284,12 @@ main {
     display: none;
   }
 
- .main-nav{
-   &::after {
-     display: none ;
-   }
-   &::before {
-     display: none;
-   }
- }
+  .main-nav {
+    &::after {
+      display: none;
+    }
+    &::before {
+      display: none;
+    }
+  }
 }
