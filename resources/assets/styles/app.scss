@@ -11,7 +11,7 @@
 @import "utils/elements-middle";
 //@import "utils/sprites";
 @import "utils/font-face";
-@import "utils/buttons";
+//@import "utils/buttons";
 @import "utils/tooltips";
 @import "utils/global";
 
@@ -19,7 +19,7 @@
 @import "base/fonts";
 @import "base/global";
 @import "base/buttons";
-@import "base/tabs";
+//@import "base/tabs";
 
 @import "base/main";
 
@@ -28,7 +28,8 @@
   .title {
     font-size: 84px;
     font-weight: 100;
-    @include margin(0, 0, 0, 20px);
+    //@include margin(0, 0, 0, 20px);
+    margin: 0 0 0 20px;
   }
   .responsive-image {
     width: auto;
@@ -36,7 +37,8 @@
     opacity: 0.4;
   }
   .links {
-    @include margin(40px, 0, 0, 0);
+    margin: 40px 0 0 0;
+    //@include margin(40px, 0, 0, 0);
     & > a {
       border-radius: 5px;
       color: #636b6f;
@@ -55,10 +57,9 @@
           position: absolute;
           top: -14px;
           bottom: 0;
-          @include left(7px);
-          @include right(0px);
+          left: 7px;
+          right: 0px;
           transform: scale(0.4);
-          //@include retina-sprite($sp-github-group);
         }
       }
       &.github {
@@ -69,10 +70,9 @@
           position: absolute;
           top: -22px;
           bottom: 0;
-          @include left(-12px);
-          @include right(0px);
+          left: -12px;
+          right: 0;
           transform: scale(0.4);
-          //@include retina-sprite($sp-www-group);
         }
       }
     }

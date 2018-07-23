@@ -8,8 +8,8 @@
   transition: all .3s ease;
   border:1px solid transparent;
   //@include padding(5px,0,5px,0);
-  @include responsive-text-size('fluid_text');
-  @include text-align(center);
+  //@include responsive-text-size('fluid_text');
+  //@include text-align(center);
 
   &:hover {
     background: transparent;

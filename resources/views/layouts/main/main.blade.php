@@ -438,7 +438,7 @@
 
                 </div>
             </section>
-            @include('layouts.main.sidebar');
+            @include('layouts.main.sidebar')
 
         </div>
     </div>
