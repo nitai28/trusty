@@ -119,11 +119,18 @@ section {
     @extend %flex-center;
     margin-right: 16px;
     margin-left: 21px;
-    width: 180px;
+    min-width: 180px;
+    max-width: 180px;
     padding: 5px;
     height: 110px;
     border: 1px solid #d9e3e9;
     border-radius: 3px;
+    .ag-logo{
+      width: 100%;
+      height: auto;
+      max-height: 100%;
+
+    }
   }
   .loc-rating {
     display: flex;
@@ -131,12 +138,17 @@ section {
     margin-bottom: 20px;
   }
   .agent-details {
+    width: 100%;
     h3 {
       margin-bottom: 6px;
       font-size: 24px;
       line-height: 48px;
       color: rgb(44, 63, 72);
       font-weight: normal;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      max-width: 300px;
     }
     p {
       margin-bottom: 5px;
@@ -151,6 +163,7 @@ section {
 
 .price-details {
   width: 170px;
+  min-width: 160px;
   p {
     font-size: 16px;
     line-height: 18px;
@@ -338,7 +351,7 @@ section {
       width: 100%;
       h3 {
         position: absolute;
-        top: 0px;
+        top: 0;
         overflow: visible;
         //margin-bottom: 5px;
       }

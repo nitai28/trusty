@@ -93,349 +93,54 @@
 
                 </div>
                 <div class="agent-list">
-                    <div class="agent-li agent1">
-                        <div class="agent-logo">
-                            <img src="images/main/agent/agent.png" alt="">
-                        </div>
-                        <div class="agent-details">
+                    @foreach($agents as $agent)
+                        <div class="agent-li agent1">
+                            <div class="agent-logo">
+                                <img class="ag-logo" src={{$agent['logo_src']}} alt="">
+                            </div>
+                            <div class="agent-details">
 
-                            <h3>אלמוג יצחקי סוכנות אלמוגים </h3>
-                            <p>"ריף אלמוגים" הינה חברה בבעלות פרטית הפועלת למען לקוחותיה במישור הכספי בכל טווחי
-                                ההשקעה. </p>
-                            <div class="loc-rating">
+                                <h3>{{$agent['name']}} </h3>
+                                <p>{{$agent['description']}}</p>
+                                <div class="loc-rating">
+                                    <div>
+                                        <img src="images/main/agent/loc.png" alt="">
+                                        <span class="loc-name">{{$agent['location']}} </span>
+                                    </div>
+                                    <div class="star">
+                                        <img class="star-pic" src="images/main/agent/star.png" alt="">
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <img class="rectangle" src="images/main/agent/Rectangle.png" alt="">
+                            <div class="price-details">
                                 <div>
-                                    <img src="images/main/agent/loc.png" alt="">
-                                    <span class="loc-name">פתח תקווה</span>
+                                    <h3 class="price-number">{{$agent['price']}}</h3>
+                                    <p>פרמיה חודשית</p>
                                 </div>
-                                <div class="star">
-                                    <img class="star-pic" src="images/main/agent/star.png" alt="">
+
+                                <div class="btn-buy">
+                                    <img src="images/main/agent/Shopping-Cart.png" alt="Shopping-Cart">
+                                    <span>לרכישה</span>
                                 </div>
-                            </div>
-
-
-                        </div>
-                        <img class="rectangle" src="images/main/agent/Rectangle.png" alt="">
-                        <div class="price-details">
-                            <div>
-                                <h3 class="price-number">483</h3>
-                                <p>פרמיה חודשית</p>
-                            </div>
-
-                            <div class="btn-buy">
-                                <img src="images/main/agent/Shopping-Cart.png" alt="Shopping-Cart">
-                                <span>לרכישה</span>
                             </div>
                         </div>
+                    @endforeach
+
+                    <div>
+                        <ul class="page-numbers">
+                            <li><a href="">1</a></li>
+                            <li><a href="">2</a></li>
+                            <li><a href="">3</a></li>
+                            <li><a href="">4</a></li>
+                            <li><a href="">5</a></li>
+                            <li><a href="">6</a></li>
+
+                        </ul>
+
                     </div>
-                    <div class="agent-li agent1">
-                        <div class="agent-logo">
-                            <img src="images/main/agent/agent.png" alt="">
-                        </div>
-                        <div class="agent-details">
-                            <h3>אלמוג יצחקי סוכנות אלמוגים </h3>
-                            <p>"ריף אלמוגים" הינה חברה בבעלות פרטית הפועלת למען לקוחותיה במישור הכספי בכל טווחי
-                                ההשקעה. </p>
-                            <div class="loc-rating">
-                                <div>
-                                    <img src="images/main/agent/loc.png" alt="">
-                                    <span class="loc-name">פתח תקווה</span>
-                                </div>
-                                <div class="star">
-                                    <img class="star-pic" src="images/main/agent/star.png" alt="">
-                                </div>
-                            </div>
-
-
-                        </div>
-                        <img class="rectangle" src="images/main/agent/Rectangle.png" alt="">
-                        <div class="price-details">
-                            <div>
-                                <h3 class="price-number">483</h3>
-                                <p>פרמיה חודשית</p>
-
-                            </div>
-                            <div class="btn-buy">
-                                <img src="images/main/agent/Shopping-Cart.png" alt="Shopping-Cart">
-                                <span>לרכישה</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="agent-li agent1">
-                        <div class="agent-logo">
-                            <img src="images/main/agent/agent.png" alt="">
-                        </div>
-                        <div class="agent-details">
-                            <h3>אלמוג יצחקי סוכנות אלמוגים </h3>
-                            <p>"ריף אלמוגים" הינה חברה בבעלות פרטית הפועלת למען לקוחותיה במישור הכספי בכל טווחי
-                                ההשקעה. </p>
-                            <div class="loc-rating">
-                                <div>
-                                    <img src="images/main/agent/loc.png" alt="">
-                                    <span class="loc-name">פתח תקווה</span>
-                                </div>
-                                <div class="star">
-                                    <img class="star-pic" src="images/main/agent/star.png" alt="">
-                                </div>
-                            </div>
-
-
-                        </div>
-                        <img class="rectangle" src="images/main/agent/Rectangle.png" alt="">
-                        <div class="price-details">
-                            <div>
-                                <h3 class="price-number">483</h3>
-                                <p>פרמיה חודשית</p>
-
-                            </div>
-                            <div class="btn-buy">
-                                <img src="images/main/agent/Shopping-Cart.png" alt="Shopping-Cart">
-                                <span>לרכישה</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="agent-li agent1">
-                        <div class="agent-logo">
-                            <img src="images/main/agent/agent.png" alt="">
-                        </div>
-                        <div class="agent-details">
-                            <h3>אלמוג יצחקי סוכנות אלמוגים </h3>
-                            <p>"ריף אלמוגים" הינה חברה בבעלות פרטית הפועלת למען לקוחותיה במישור הכספי בכל טווחי
-                                ההשקעה. </p>
-                            <div class="loc-rating">
-                                <div>
-                                    <img src="images/main/agent/loc.png" alt="">
-                                    <span class="loc-name">פתח תקווה</span>
-                                </div>
-                                <div class="star">
-                                    <img class="star-pic" src="images/main/agent/star.png" alt="">
-                                </div>
-                            </div>
-
-
-                        </div>
-                        <img class="rectangle" src="images/main/agent/Rectangle.png" alt="">
-                        <div class="price-details">
-                            <div>
-
-                                <h3 class="price-number">483</h3>
-                                <p>פרמיה חודשית</p>
-                            </div>
-                            <div class="btn-buy">
-                                <img src="images/main/agent/Shopping-Cart.png" alt="Shopping-Cart">
-                                <span>לרכישה</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="agent-li agent1">
-                        <div class="agent-logo">
-                            <img src="images/main/agent/agent.png" alt="">
-                        </div>
-                        <div class="agent-details">
-                            <h3>אלמוג יצחקי סוכנות אלמוגים </h3>
-                            <p>"ריף אלמוגים" הינה חברה בבעלות פרטית הפועלת למען לקוחותיה במישור הכספי בכל טווחי
-                                ההשקעה. </p>
-                            <div class="loc-rating">
-                                <div>
-                                    <img src="images/main/agent/loc.png" alt="">
-                                    <span class="loc-name">פתח תקווה</span>
-                                </div>
-                                <div class="star">
-                                    <img class="star-pic" src="images/main/agent/star.png" alt="">
-                                </div>
-                            </div>
-
-
-                        </div>
-                        <img class="rectangle" src="images/main/agent/Rectangle.png" alt="">
-                        <div class="price-details">
-                            <div>
-                                <h3 class="price-number">483</h3>
-                                <p>פרמיה חודשית</p>
-
-                            </div>
-                            <div class="btn-buy">
-                                <img src="images/main/agent/Shopping-Cart.png" alt="Shopping-Cart">
-                                <span>לרכישה</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="agent-li agent1">
-                        <div class="agent-logo">
-                            <img src="images/main/agent/agent.png" alt="">
-                        </div>
-                        <div class="agent-details">
-                            <h3>אלמוג יצחקי סוכנות אלמוגים </h3>
-                            <p>"ריף אלמוגים" הינה חברה בבעלות פרטית הפועלת למען לקוחותיה במישור הכספי בכל טווחי
-                                ההשקעה. </p>
-                            <div class="loc-rating">
-                                <div>
-                                    <img src="images/main/agent/loc.png" alt="">
-                                    <span class="loc-name">פתח תקווה</span>
-                                </div>
-                                <div class="star">
-                                    <img class="star-pic" src="images/main/agent/star.png" alt="">
-                                </div>
-                            </div>
-
-
-                        </div>
-                        <img class="rectangle" src="images/main/agent/Rectangle.png" alt="">
-                        <div class="price-details">
-                            <div>
-                                <h3 class="price-number">483</h3>
-                                <p>פרמיה חודשית</p>
-
-                            </div>
-                            <div class="btn-buy">
-                                <img src="images/main/agent/Shopping-Cart.png" alt="Shopping-Cart">
-                                <span>לרכישה</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="agent-li agent1">
-                        <div class="agent-logo">
-                            <img src="images/main/agent/agent.png" alt="">
-                        </div>
-                        <div class="agent-details">
-                            <h3>אלמוג יצחקי סוכנות אלמוגים </h3>
-                            <p>"ריף אלמוגים" הינה חברה בבעלות פרטית הפועלת למען לקוחותיה במישור הכספי בכל טווחי
-                                ההשקעה. </p>
-                            <div class="loc-rating">
-                                <div>
-                                    <img src="images/main/agent/loc.png" alt="">
-                                    <span class="loc-name">פתח תקווה</span>
-                                </div>
-                                <div class="star">
-                                    <img class="star-pic" src="images/main/agent/star.png" alt="">
-                                </div>
-                            </div>
-
-
-                        </div>
-                        <img class="rectangle" src="images/main/agent/Rectangle.png" alt="">
-                        <div class="price-details">
-                            <div>
-
-                                <h3 class="price-number">483</h3>
-                                <p>פרמיה חודשית</p>
-                            </div>
-                            <div class="btn-buy">
-                                <img src="images/main/agent/Shopping-Cart.png" alt="Shopping-Cart">
-                                <span>לרכישה</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="agent-li agent1">
-                        <div class="agent-logo">
-                            <img src="images/main/agent/agent.png" alt="">
-                        </div>
-                        <div class="agent-details">
-                            <h3>אלמוג יצחקי סוכנות אלמוגים </h3>
-                            <p>"ריף אלמוגים" הינה חברה בבעלות פרטית הפועלת למען לקוחותיה במישור הכספי בכל טווחי
-                                ההשקעה. </p>
-                            <div class="loc-rating">
-                                <div>
-                                    <img src="images/main/agent/loc.png" alt="">
-                                    <span class="loc-name">פתח תקווה</span>
-                                </div>
-                                <div class="star">
-                                    <img class="star-pic" src="images/main/agent/star.png" alt="">
-                                </div>
-                            </div>
-
-
-                        </div>
-                        <img class="rectangle" src="images/main/agent/Rectangle.png" alt="">
-                        <div class="price-details">
-                            <div>
-                                <h3 class="price-number">483</h3>
-                                <p>פרמיה חודשית</p>
-
-                            </div>
-                            <div class="btn-buy">
-                                <img src="images/main/agent/Shopping-Cart.png" alt="Shopping-Cart">
-                                <span>לרכישה</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="agent-li agent1">
-                        <div class="agent-logo">
-                            <img src="images/main/agent/agent.png" alt="">
-                        </div>
-                        <div class="agent-details">
-                            <h3>אלמוג יצחקי סוכנות אלמוגים </h3>
-                            <p>"ריף אלמוגים" הינה חברה בבעלות פרטית הפועלת למען לקוחותיה במישור הכספי בכל טווחי
-                                ההשקעה. </p>
-                            <div class="loc-rating">
-                                <div>
-                                    <img src="images/main/agent/loc.png" alt="">
-                                    <span class="loc-name">פתח תקווה</span>
-                                </div>
-                                <div class="star">
-                                    <img class="star-pic" src="images/main/agent/star.png" alt="">
-                                </div>
-                            </div>
-
-
-                        </div>
-                        <img class="rectangle" src="images/main/agent/Rectangle.png" alt="">
-                        <div class="price-details">
-                            <div>
-                                <h3 class="price-number">483</h3>
-                                <p>פרמיה חודשית</p>
-
-                            </div>
-                            <div class="btn-buy">
-                                <img src="images/main/agent/Shopping-Cart.png" alt="Shopping-Cart">
-                                <span>לרכישה</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="agent-li agent1">
-                        <div class="agent-logo">
-                            <img src="images/main/agent/agent.png" alt="">
-                        </div>
-                        <div class="agent-details">
-                            <h3>אלמוג יצחקי סוכנות אלמוגים </h3>
-                            <p>"ריף אלמוגים" הינה חברה בבעלות פרטית הפועלת למען לקוחותיה במישור הכספי בכל טווחי
-                                ההשקעה. </p>
-                            <div class="loc-rating">
-                                <div>
-                                    <img src="images/main/agent/loc.png" alt="">
-                                    <span class="loc-name">פתח תקווה</span>
-                                </div>
-                                <div class="star">
-                                    <img class="star-pic" src="images/main/agent/star.png" alt="">
-                                </div>
-                            </div>
-
-
-                        </div>
-                        <img class="rectangle" src="images/main/agent/Rectangle.png" alt="">
-                        <div class="price-details">
-                            <div>
-                                <h3 class="price-number">483</h3>
-                                <p>פרמיה חודשית</p>
-
-                            </div>
-                            <div class="btn-buy">
-                                <img src="images/main/agent/Shopping-Cart.png" alt="Shopping-Cart">
-                                <span>לרכישה</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <ul class="page-numbers">
-                        <li><a href="">1</a></li>
-                        <li><a href="">2</a></li>
-                        <li><a href="">3</a></li>
-                        <li><a href="">4</a></li>
-                        <li><a href="">5</a></li>
-                        <li><a href="">6</a></li>
-
-                    </ul>
-
                 </div>
             </section>
             @include('layouts.main.sidebar')

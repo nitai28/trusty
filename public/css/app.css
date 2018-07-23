@@ -735,20 +735,6 @@ template {
 
 /* make rotate */
 
-@font-face {
-  font-family: "Raleway";
-  font-style: normal;
-  font-weight: 100;
-  src: url(/fonts/Raleway-Thin.woff2?48545e44427b598e73bd132ebe9c5fff) format("woff2");
-}
-
-@font-face {
-  font-family: "Raleway";
-  font-style: normal;
-  font-weight: 600;
-  src: url(/fonts/Raleway-SemiBold.woff2?7fab3bbd1431b8f48bbd60b8337cf74e) format("woff2");
-}
-
 html {
   width: 100%;
   overflow-x: hidden;
@@ -1449,11 +1435,18 @@ section .star-pic {
 .agent-li .agent-logo {
   margin-right: 16px;
   margin-left: 21px;
-  width: 180px;
+  min-width: 180px;
+  max-width: 180px;
   padding: 5px;
   height: 110px;
   border: 1px solid #d9e3e9;
   border-radius: 3px;
+}
+
+.agent-li .agent-logo .ag-logo {
+  width: 100%;
+  height: auto;
+  max-height: 100%;
 }
 
 .agent-li .loc-rating {
@@ -1466,12 +1459,20 @@ section .star-pic {
   margin-bottom: 20px;
 }
 
+.agent-li .agent-details {
+  width: 100%;
+}
+
 .agent-li .agent-details h3 {
   margin-bottom: 6px;
   font-size: 24px;
   line-height: 48px;
   color: #2c3f48;
   font-weight: normal;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 300px;
 }
 
 .agent-li .agent-details p {
@@ -1484,6 +1485,7 @@ section .star-pic {
 
 .price-details {
   width: 170px;
+  min-width: 160px;
 }
 
 .price-details p {
@@ -1714,7 +1716,7 @@ section .star-pic {
 
   .agent-li .agent-details h3 {
     position: absolute;
-    top: 0px;
+    top: 0;
     overflow: visible;
   }
 
@@ -2131,7 +2133,7 @@ li {
 
 @font-face {
   font-family: "Fb Spoiler";
-  src: url("/src/fonts/fbspoilersp-regularwebfont.woff2"), url("/fonts/fbspoileren-bold-webfont.woff2");
+  src: url("/fonts/fbspoilersp-regularwebfont.woff2"), url("/fonts/fbspoileren-bold-webfont.woff2");
 }
 
 .content {

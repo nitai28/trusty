@@ -2,12 +2,15 @@
 
 namespace App\Http\Controllers;
 
+use App\Agent;
 use Illuminate\Http\Request;
 
 class AgentController extends Controller
 {
     public function index()
     {
-        return view('layout');
+        $agents=Agent::all();
+//        dd($agents);
+        return view('layout' ,compact('agents'));
     }
 }

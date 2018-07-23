@@ -31816,7 +31816,7 @@ module.exports = function spread(callback) {
 /* 35 */
 /***/ (function(module, exports) {
 
-throw new Error("Module build failed: ModuleBuildError: Module build failed: Error: ENOENT: no such file or directory, open '/home/compie/Desktop/trusty/trusty/resources/assets/fonts/Raleway-SemiBold.woff2'\n    at runLoaders (/home/compie/Desktop/trusty/trusty/node_modules/webpack/lib/NormalModule.js:195:19)\n    at /home/compie/Desktop/trusty/trusty/node_modules/loader-runner/lib/LoaderRunner.js:364:11\n    at /home/compie/Desktop/trusty/trusty/node_modules/loader-runner/lib/LoaderRunner.js:200:19\n    at /home/compie/Desktop/trusty/trusty/node_modules/enhanced-resolve/lib/CachedInputFileSystem.js:70:14\n    at process._tickCallback (internal/process/next_tick.js:61:11)");
+// removed by extract-text-webpack-plugin
 
 /***/ })
 /******/ ]);
