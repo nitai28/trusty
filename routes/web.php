@@ -11,5 +11,6 @@
 |
 */
 
-Route::get('/','AgentController@index');
+Route::get('/', 'AgentController@index');
+Route::post('/', 'AgentController@filter');
 

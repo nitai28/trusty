@@ -7,7 +7,7 @@
         {{ csrf_field() }}
         <div class="selectdiv">
             <img src="images/main/aside/Shape 9 copy 13.png" alt="">
-            <select name="" id="">
+            <select name="insurance_type" id="">
                 <option value="">בחר את סוג הביטוח</option>
                 <option value="type1">type1</option>
                 <option value="type2">type2</option>
@@ -22,7 +22,7 @@
         </div>
         <div class="selectdiv">
             <img src="images/main/aside/Layer 1198 copy 2.png" alt="">
-            <select name="" id="">
+            <select name="car_type" id="">
                 <option value="">בחר את סוג הרכב</option>
                 <option value="type1">type1</option>
                 <option value="type2">type2</option>

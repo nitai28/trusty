@@ -43,7 +43,7 @@
                 <div class="main-result">
                     <div class="agent-result">
                         <h3>נמצאו
-                            <span class="agent-number">3508</span>
+                            <span class="agent-number">{{$agentsNumbers}}</span>
                             סוכני ביטוח
                         </h3>
 
@@ -86,11 +86,7 @@
                                 </select>
                             </div>
                         </div>
-
-
                     </div>
-
-
                 </div>
                 <div class="agent-list">
                     @foreach($agents as $agent)
