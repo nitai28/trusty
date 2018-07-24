@@ -1546,14 +1546,24 @@ section .star-pic {
   margin-left: 2.76vw;
 }
 
-.page-numbers li {
+.page-numbers ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.page-numbers ul li {
   list-style: none;
   margin-top: 30px;
   margin-right: 32px;
   font-size: 22px;
 }
 
-.page-numbers li a {
+.page-numbers ul li a {
   color: #33455d;
   text-decoration: none;
 }

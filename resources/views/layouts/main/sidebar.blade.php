@@ -54,8 +54,8 @@
             <p>
                 האם היה לך ביטוח מקיף או רכב ליסינג ב-3 שנים האחרונות?
             </p>
-            <input class="radio1" value="true" type="radio" name="q1" id="">
-            <input class="radio2" value="false" type="radio" name="q1" id="">
+            <input class="radio1" value= 1 type="radio" name="q1" id="">
+            <input class="radio2" value= 0 type="radio" name="q1" id="">
         </div>
         <img class="quest-border" src="images/main/aside/pborder.png" alt="border">
 
