@@ -9,9 +9,12 @@
 </head>
 
 <body>
-@include('layouts.header.header');
-@include('layouts.main.main');
-@include('layouts.footer.footer');
+@include('layouts.header.header')
+@if (\Request::is('/'))
+@include('layouts.main.main')
+@endif
+@yield('content')
+@include('layouts.footer.footer')
 
 </body>
 

@@ -1961,6 +1961,11 @@ main .main-cont {
   margin-bottom: 100px;
 }
 
+.price-wizard button:hover {
+  background-color: #ff595f;
+  cursor: pointer;
+}
+
 .price-wizard .last-select-border {
   margin-top: 15px;
 }
