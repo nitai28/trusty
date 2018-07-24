@@ -13,6 +13,10 @@
             </div>
 
             <div class="contact-link">
+                {{--@if( Auth::user()->name );--}}
+
+                {{--<div> {{$userName}}</div>--}}
+                {{--@endif--}}
                 <img class="message-ico" src="images/nav/message.png" alt="message">
                 <img src="images/nav/sep.png" alt="separet">
                 <img class="hum-ico" src="images/nav/Rounded.png" alt="Rounded">

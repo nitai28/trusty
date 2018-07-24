@@ -11,7 +11,7 @@
 <body>
 @include('layouts.header.header')
 @if (\Request::is('/'))
-@include('layouts.main.main')
+    @include('layouts.main.main')
 @endif
 @yield('content')
 @include('layouts.footer.footer')
