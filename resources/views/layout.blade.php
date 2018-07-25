@@ -9,6 +9,7 @@
 </head>
 
 <body>
+
 @include('layouts.header.header')
 @if (\Request::is('/'))
     @include('layouts.main.main')

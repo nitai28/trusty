@@ -6,6 +6,17 @@
   justify-content: space-between;
   align-items: center;
   padding-top: 11px;
+
+}
+.connection-link{
+  text-decoration: none;
+  margin-left: 8px;
+  font-family: 'FbSpoiler';
+  color: #33445c;
+  font-weight: bold;
+  &:active{
+    color: #ff595f;
+  }
 }
 
 .nav-search {

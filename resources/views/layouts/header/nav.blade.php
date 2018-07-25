@@ -13,10 +13,16 @@
             </div>
 
             <div class="contact-link">
-                {{--@if( Auth::user()->name );--}}
 
-                {{--<div> {{$userName}}</div>--}}
-                {{--@endif--}}
+                @if(Auth::check())
+                    <a class="connection-link" href="#">{{Auth::user()->name}} מחובר</a>
+                    <a class="connection-link" href="/logout">התנתק</a>
+                @endif
+                @if(!Auth::check())
+                    <a class="connection-link" href="/login">התחבר</a>
+                    <a class="connection-link" href="/register">הרשם לאתר</a>
+                @endif
+
                 <img class="message-ico" src="images/nav/message.png" alt="message">
                 <img src="images/nav/sep.png" alt="separet">
                 <img class="hum-ico" src="images/nav/Rounded.png" alt="Rounded">

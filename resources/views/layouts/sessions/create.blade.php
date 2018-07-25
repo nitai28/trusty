@@ -1,9 +1,8 @@
-@extends('layout');
+@extends('layout')
 
 @section('content')
     <div>
-        <h2>Login</h2>
-        <form method="POST" action="/login">
+        <form class="form-design" method="POST" action="/login">
             {{csrf_field()}}
             <div>
                 <label for="name">Name</label>
